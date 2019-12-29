@@ -9,7 +9,7 @@ class Main extends Component {
 
     getWordList() {
         const { myFilter, myWords } = this.props;
-        if (myFilter === 'MEMORIED')
+        if (myFilter === 'MEMORIZED')
             return myWords.filter(e => e.memorized);
         if (myFilter === 'NEED_PRACTICE')
             return myWords.filter(e => !e.memorized);
